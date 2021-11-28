@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %}404 - YourShop{% endblock %}
+{% block head %}
+	{{ super() }}
+{% endblock %}
+
+{% block content %}
+	<h1>404 Error</h1>
+	<a href="{{ url_for('home') }}">Go Home</a>
+{% endblock %}

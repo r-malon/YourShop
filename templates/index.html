@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}Home - YourShop{% endblock %}
+{% block head %}
+	{{ super() }}
+{% endblock %}
+
+{% block content %}
+
+	{% include 'includes/options.html' %}
+
+	<div id="items" class="container-md row g-3 my-3 mx-auto">
+		<span class="fs-4">CARREGANDO ITEMS...</span>
+		<div class="spinner-border text-warning" role="status"></div>
+	</div>
+
+	<div class="d-grid col-md-8 mx-auto">
+		<button id="more" class="btn btn-primary fw-bold my-3">Ver mais</button>
+	</div>
+
+	{% block alerts %}
+		{{ super() }}
+	{% endblock %}
+
+{% endblock %}

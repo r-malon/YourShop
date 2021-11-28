@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block title %}Adicionar item - YourShop{% endblock %}
+{% block head %}
+	{{ super() }}
+{% endblock %}
+
+{% block content %}
+	<form action="/items" method="post" enctype="multipart/form-data">
+		<fieldset class="container-md row shadow-sm border rounded g-3 my-3 mx-auto">
+			<div class="col-12">
+				<label for="desc" class="form-label">Descrição</label>
+				<input type="text" id="desc" name="desc" class="form-control" required>
+			</div>
+			<br>
+			<div class="col-md-6">
+				<label for="price" class="form-label">Preço</label>
+				<div class="input-group">
+					<span class="input-group-text">R$</span>
+					<input type="number" id="price" name="price" class="form-control" min="1" value="1" step="any" required>
+				</div>
+			</div>
+			<br>
+			<div class="col-md-6">
+				<label for="qty" class="form-label">Quantidade</label>
+				<input type="number" id="qty" name="qty" class="form-control" min="1" value="1" required>
+			</div>
+			<br>
+			<div class="col-md-6">
+				<label for="photo" class="form-label">Foto</label>
+				<input type="file" id="photo" name="photo" class="form-control" accept="image/*" required>
+			</div>
+			<br>
+			<button class="btn btn-primary btn-block fw-bold my-3 mx-auto">Adicionar item</button>
+		</fieldset>
+	</form>
+
+	{% block alerts %}
+		{{ super() }}
+	{% endblock %}
+{% endblock %}
