@@ -1,5 +1,5 @@
 __pycache__/
-static/uploads/
-SECRET_KEY
-*.db
+# static/uploads/
+# SECRET_KEY
+# *.db
 *.pyc
