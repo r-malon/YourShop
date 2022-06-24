@@ -1,1 +1,1 @@
-web: bash run.sh
+web: gunicorn --bind 0.0.0.0:${PORT} routes:app
