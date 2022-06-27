@@ -30,6 +30,7 @@ def teardown(error=None):
 def home():
 	return render_template('index.html')
 
+@app.route('/about')
 @app.route('/sobre')
 def about():
 	return render_template('about.html')
