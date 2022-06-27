@@ -92,7 +92,6 @@ def add_item():
 						app.config['UPLOAD_FOLDER'], 
 						secure_filename(f'{item.id}.{get_ext(file.filename)}')
 					)
-					print(get_ext(file.filename))
 					file.save(filename)
 		res = make_response(jsonify(
 			{'message': 'Inserido com sucesso!', 'category': 'success'}), 201)
