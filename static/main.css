@@ -1,57 +1,45 @@
 * {
 	font-family: sans-serif;
 }
-
 body, html {
 	height: 100%;
 	margin: 0;
 }
-
 img {
 	object-fit: cover;
 	width: 300px;
 	height: 300px;
 }
-
 #nav_search {
 	touch-action: manipulation;
 }
-
 .wrap {
 	cursor: pointer;
 	display: inline-block;
 }
-
 .red {
 	pointer-events: none;
 	filter: invert(21%) sepia(94%) saturate(5731%) hue-rotate(358deg) brightness(98%) contrast(127%);
 }
-
 .item_card {
 	animation: fadeIn 1s;
 }
-
 .alert {
 	animation: alertFadeOut 2s;
 }
-
 /*object[type*="svg"]*/
-
 #accordion {
 	text-align: justify;
 }
-
 @keyframes fadeIn {
 	from {opacity: 0;}
 	to {opacity: 1;}
 }
-
 @keyframes alertFadeOut {
 	0% {opacity: 1;}
 	60% {opacity: 1;}
 	100% {opacity: 0;}
 }
-
 @media (max-width: 768px) {
 	.container-md {
 		margin: 0 !important;

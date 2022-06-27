@@ -7,7 +7,7 @@ with open('SECRET_KEY', encoding='utf-8') as f:
 	SECRET_KEY = f.read()
 
 UPLOAD_FOLDER = 'static/uploads'
-ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg', 'bmp', 'gif', 'webp', 'tiff'}
+ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg', 'bmp', 'gif', 'webp', 'tiff'} # set
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = SECRET_KEY

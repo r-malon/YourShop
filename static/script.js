@@ -33,7 +33,7 @@ nav_search.addEventListener("keyup", (e) => {
 		.then(
 			data => parseItems(data, "beforeend", true)
 		);
-	}, 500);
+	}, 400);
 });
 
 
